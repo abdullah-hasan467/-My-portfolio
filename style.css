@@ -537,7 +537,7 @@ p {
   height: 100%;
   width: 100%;
   position: relative;
-  border: 10px solid white;
+  border: 10px solid rgb(10, 10, 10);
 }
 #about .col-left .about-img::after {
   content: "";
@@ -546,7 +546,6 @@ p {
   top: 19px;
   height: 98%;
   width: 98%;
-  border: 7px solid crimson;
   z-index: -1;
 }
 
