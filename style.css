@@ -237,15 +237,15 @@ p {
 /* End Header section */
 
 /* Hero Section */
+/* Original styles */
 #hero {
   background-image: url(./img/IMG_0641.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
   z-index: 1;
-  /* Added properties for responsiveness */
-  min-height: 100vh; /* Set minimum height to viewport height */
-  overflow: hidden; /* Hide overflowing content */
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 #hero::after {
@@ -259,6 +259,14 @@ p {
   opacity: 0.5;
   z-index: -1;
 }
+
+/* Styles for phone screens (adjust the breakpoint as needed) */
+@media screen and (max-width: 768px) {
+  #hero {
+    background-size: contain; /* Adjust background-size for better fit */
+  }
+}
+
 #hero .hero {
   max-width: 1200px;
   margin: 0 auto;
