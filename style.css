@@ -238,9 +238,10 @@ p {
 
 /* Hero Section */
 /* Original styles */
+/* Original styles */
 #hero {
   background-image: url(./img/IMG_0641.jpg);
-  background-size: auto;
+  background-size: cover; /* Adjust for initial view */
   background-position: top center;
   position: relative;
   z-index: 1;
@@ -258,6 +259,27 @@ p {
   background-color: black;
   opacity: 0.5;
   z-index: -1;
+}
+
+/* Styles for phone screens (adjust breakpoint as needed) */
+@media screen and (max-width: 768px) {
+  #hero {
+    background-size: contain; /* Image stays within viewport */
+  }
+}
+
+/* Additional considerations for mobile optimization  */
+
+/* 1. Optimize image for web (reduce file size) */
+.img-optimized {
+  /* Use tools to optimize image size */
+}
+
+/* 2. Adjust content stacking for mobile (optional) */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    padding: 20px; /* Adjust padding for better spacing */
+  }
 }
 
 /* Styles for phone screens (adjust the breakpoint as needed) */
