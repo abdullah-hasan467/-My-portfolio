@@ -237,15 +237,15 @@ p {
 /* End Header section */
 
 /* Hero Section */
+/* Existing Hero Section */
 #hero {
-  background-image: url(cover.jpg);
+  background-image: url(cover.jpg); /* Default image for larger screens */
   background-size: cover;
   background-position: top center;
   position: relative;
   z-index: 1;
-  /* Added properties for responsiveness */
-  min-height: 100vh; /* Set minimum height to viewport height */
-  overflow: hidden; /* Hide overflowing content */
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 #hero::after {
@@ -259,15 +259,16 @@ p {
   opacity: 0.5;
   z-index: -1;
 }
+
+/* Media query for mobile devices */
 @media screen and (max-width: 768px) {
-  /* Styles for phone screens here */
-  .container {
-    width: 90%; /* Adjust width for mobile */
-  }
-  .text {
-    font-size: 16px; /* Adjust font size for readability */
+  #hero {
+    background-image: url(./ImagesCover/Mobile\ View1.JPEG); /* Replace 'mobile-demo.jpg' with the actual mobile image */
+    background-size: cover;
+    background-position: center;
   }
 }
+
 #hero .hero {
   max-width: 1200px;
   margin: 0 auto;
