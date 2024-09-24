@@ -239,7 +239,7 @@ p {
 /* Hero Section */
 /* Existing Hero Section */
 #hero {
-  background-image: url(./cover.jpg); /* Default image for larger screens */
+  background-image: url(./ImagesCover/cover.jpg); /* Default image for larger screens */
   background-size: cover;
   background-position: top center;
   position: relative;
