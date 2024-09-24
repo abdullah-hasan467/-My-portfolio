@@ -239,7 +239,7 @@ p {
 /* Hero Section */
 /* Existing Hero Section */
 #hero {
-  background-image: url(./ImagesCover/cover.jpg); /* Default image for larger screens */
+  background-image: url(./ImagesCover/LaptopScreen/cover.jpg); /* Default image for larger screens */
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -263,7 +263,7 @@ p {
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
   #hero {
-    background-image: url(./ImagesCover/Mobile\ View1.JPEG); /* Updated image path without spaces */
+    background-image: url(./ImagesCover/MobileScreen/Mobile\ View1.JPEG); /* Updated image path without spaces */
     background-size: cover;
     background-position: center;
   }
