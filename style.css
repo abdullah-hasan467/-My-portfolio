@@ -179,6 +179,8 @@ p {
 }
 #header .nav-list ul li:hover a {
   color: aqua;
+  background-color: black;
+  border-radius: 15px;
 }
 #header .hamburger {
   height: 60px;
@@ -348,7 +350,14 @@ p {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  justify-content: center;
+  text-align: center;
 }
+.text-center {
+  justify-content: center;
+  text-align: center;
+}
+
 #services .service-item::after {
   content: "";
   position: absolute;
@@ -648,6 +657,21 @@ p {
   color: white;
   font-size: 1.3rem;
 }
+.project-img-5 {
+  height: 400px;
+  width: 200px;
+  display: flex;
+  margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-img-5 {
+    width:50%; /* Adjust width to make room for two items per row */
+    margin-left: -170px; /* Optional: reduce margin to fit better */
+  }
+}
+
+
 /* End Footer */
 
 /* Keyframes */
