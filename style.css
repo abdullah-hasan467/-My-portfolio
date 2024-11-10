@@ -666,11 +666,14 @@ p {
 
 @media screen and (max-width: 768px) {
   .project-img-5 {
-    width:50%; /* Adjust width to make room for two items per row */
-    margin-left: -170px; /* Optional: reduce margin to fit better */
+    width: 50%; /* Adjust width to make room for two items per row */
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px; /* Optional: reduce margin to fit better */
   }
 }
-
 
 /* End Footer */
 
