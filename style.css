@@ -429,7 +429,14 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(60deg, #5014da 0%, #a8a030 100%);
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+  background-blend-mode: screen;
   opacity: 0.9;
   z-index: -1;
 }
@@ -449,6 +456,15 @@ p {
 #Certifications .Certifications-item p {
   color: white;
   text-align: left;
+}
+
+.icon-certification {
+  width: 20%;
+  height: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  /* Positioning for centering */
 }
 
 /* End Certification Section */
@@ -666,12 +682,12 @@ p {
 
 @media screen and (max-width: 768px) {
   .project-img-5 {
-    width: 50%; 
-    height: auto;/* Adjust width to make room for two items per row */
+    width: 50%;
+    height: auto; /* Adjust width to make room for two items per row */
     display: flex;
     flex-direction: column;
     justify-content: left;
-  /* Optional: reduce margin to fit better */
+    /* Optional: reduce margin to fit better */
   }
 }
 
@@ -811,6 +827,11 @@ p {
     width: 100%;
     text-align: left;
     padding-left: 20px;
+  }
+
+  .icon-certification {
+    width: 20%;
+    height: auto;
   }
   /* End contact  */
 }
