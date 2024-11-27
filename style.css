@@ -457,32 +457,28 @@ p {
   color: white;
   text-align: left;
 }
-p{
+p {
   text-align: justify;
 }
-.h2-Class{
+.h2-Class {
   margin-top: 20px;
   margin-bottom: 20px;
-
 }
-.ul-Class{
+.ul-Class {
   margin: 20px;
 }
-.li-Class{
+.li-Class {
   font-size: 20px;
-  color:white;
-  font-family:'Courier New', Courier, monospace ;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
   text-align: left;
-  
 }
-.p-Class{
+.p-Class {
   margin: 10px;
   font-size: 20px;
   text-align: justify;
-  font-family: 'Courier New', Courier, monospace;
-  
+  font-family: "Courier New", Courier, monospace;
 }
-
 
 .icon-certification {
   width: 20%;
@@ -715,13 +711,12 @@ p{
     justify-content: left;
     /* Optional: reduce margin to fit better */
   }
-  .p-Class{
-  margin: 10px;
-  font-size: 20px;
-  text-align: justify;
-  font-family: 'Courier New', Courier, monospace;
-  
-}
+  .p-Class {
+    margin: 10px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Courier New", Courier, monospace;
+  }
 }
 
 /* End Footer */
@@ -769,13 +764,12 @@ p{
   h1.section-title {
     font-size: 6rem;
   }
-  .p-Class{
-  margin: 10px;
-  font-size: 20px;
-  text-align: justify;
-  font-family: 'Courier New', Courier, monospace;
-  
-}
+  .p-Class {
+    margin: 10px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Courier New", Courier, monospace;
+  }
 
   /* Hero */
   #hero h1 {
@@ -929,6 +923,8 @@ p{
   padding: 20px;
   text-align: center;
   border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .pro {
