@@ -470,14 +470,13 @@ p {
 .li-Class {
   font-size: 20px;
   color: white;
-  
+
   text-align: left;
 }
 .p-Class {
   margin: 10px;
   font-size: 20px;
   text-align: justify;
-  
 }
 
 .icon-certification {
@@ -715,6 +714,10 @@ p {
     margin: 10px;
     font-size: 20px;
     text-align: justify;
+    margin-top: 20px;
+  }
+  .project-img-5 img {
+    margin-top: 20px;
   }
 }
 
@@ -929,8 +932,8 @@ p {
   color: lightcoral;
 }
 
-.h3-Class{
-font-size: 20px;
-text-align: left;
-color:blueviolet;
+.h3-Class {
+  font-size: 20px;
+  text-align: left;
+  color: blueviolet;
 }
