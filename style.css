@@ -696,9 +696,21 @@ p {
 }
 .project-img-5 {
   height: auto;
-  width: 15%;
+  width: 17%;
   display: flex;
+  flex-direction: row;
   justify-items: center;
+  flex-direction: row;
+  justify-items: center;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scrollbar-width: thin; /* Optional: For a thinner scrollbar */
+  white-space: nowrap;
+}
+
+.project-img-5 img {
+  height: auto;
+  width: 100%; /* Adjust the width of the images as needed */
+  margin-right: 0px; /* Optional: Adds space between images */
 }
 
 @media screen and (max-width: 768px) {
