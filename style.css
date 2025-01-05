@@ -938,39 +938,61 @@ p {
   color: blueviolet;
 }
 
+/* Basic styling for the button */
 .cta1 {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-decoration: none;
-  color: white;
-  background-color: #4CAF50; /* Green background */
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  font-size: 18px;
+  padding: 16px 40px;
+  border: 2px solid black transparent; /* No initial border */
+  border-radius: 30px;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Border animation effect with changing color */
+.cta1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000; /* Start with black border */
+  border-radius: 30px;
+  opacity: 0.5;
+  transform: scale(1.1);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Fire-like glowing animation on hover */
+.cta1:hover:before {
+  border-color: #fff; /* Change border to white on hover */
+  transform: scale(1.2); /* Slightly enlarge the border */
 }
 
 .cta1:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #000; /* Change button background color to black */
+  color: #fff; /* Change text color to white */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Add glowing effect */
+  animation: glowing 1.5s infinite; /* Trigger glowing animation for text */
 }
 
-.alert {
-  padding: 20px;
-  background-color: #f44336; /* Red background */
-  color: white;
-  margin-top: 10px;
-  border-radius: 5px;
-  display: none; /* Initially hidden */
+/* Glowing effect for the button text */
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px #ff5f00, 0 0 10px #ff5f00, 0 0 15px #ff5f00;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347, 0 0 30px #ff4500;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff5f00, 0 0 10px #ff5f00, 0 0 15px #ff5f00;
+  }
 }
-
-.success {
-  background-color: #4CAF50; /* Green for success */
-}
-
-.info {
-  background-color: #2196F3; /* Blue for info */
-}
-
-.warning {
-  background-color: #ff9800; /* Orange for warning */
-}
-

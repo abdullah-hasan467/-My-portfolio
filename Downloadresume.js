@@ -1,6 +1,8 @@
-// script.js
-
-document.getElementById("downloadResume").addEventListener("click", function(event) { event.preventDefault(); // Prevent the default action of the link
+// script.js (unchanged from before)
+document
+  .getElementById("downloadResume")
+  .addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default action of the link
 
     // Create an alert box with a random colorful class
     var alertBox = document.createElement("div");
