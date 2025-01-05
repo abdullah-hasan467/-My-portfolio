@@ -722,6 +722,32 @@ p {
     justify-content: left;
     /* Optional: reduce margin to fit better */
   }
+
+
+
+
+/* .project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, auto); 
+  gap: 20px; 
+}
+
+.project-img-5 {
+  width: 100%; 
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  
+} */
+
+
+
+
+
+
+
   .p-Class {
     margin: 10px;
     font-size: 14px;
