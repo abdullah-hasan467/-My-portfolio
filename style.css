@@ -970,7 +970,16 @@ p {
   color: red;
 }
 
+.password{
+  margin: 20px 10px 0 0 ;
 
+}
+.forLogIn{
+  padding: 5px 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  color: greenyellow;
+}
 
 .learner {
   color: navy;
